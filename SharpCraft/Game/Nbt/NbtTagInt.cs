@@ -10,10 +10,13 @@ namespace SharpCraft.Game.Nbt
     {
         public override NbtType Type => NbtType.Int;
 
-        public override int Id => (int)NbtType.Int;
+        public override int Id => (int) NbtType.Int;
 
-        private int Value = 0;
+        public int Value { get; set; }
 
-
+        public NbtTagInt(int value)
+        {
+            Value = value;
+        }
     }
 }
