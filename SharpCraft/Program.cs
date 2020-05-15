@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace SharpCraft
 {
@@ -6,7 +7,9 @@ namespace SharpCraft
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            SharpCraft.Create(args)
+                .Bind(IPAddress.Any, 25565)
+                .Run();
         }
     }
 }
