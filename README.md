@@ -1,2 +1,2 @@
 # SharpCraft
-A minecraft server from new dimension with high profermance (not yet).
+[WIP] A server of Minecraft written by C#.
